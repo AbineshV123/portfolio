@@ -8,6 +8,10 @@ const navMenu = document.getElementById("nav-menu");
 menuBtn.addEventListener("click", () => {
 
     navMenu.classList.toggle("active");
+    menuBtn.setAttribute(
+        "aria-expanded",
+        navMenu.classList.contains("active")
+    );
 
 });
 
@@ -21,6 +25,7 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => {
 
         navMenu.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
 
     });
 
