@@ -1491,3 +1491,47 @@ body {
         text-align: left;
     }
 }
+
+/* ================================
+   Mobile - Certificates Section
+================================ */
+
+@media (max-width: 768px) {
+
+    .certificates-section .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .certificates-section .certificates-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .certificate-card {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .certificate-card h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .certificate-card p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .certificate-card span {
+        font-size: 16px;
+    }
+
+    .certificate-card a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}

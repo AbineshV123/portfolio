@@ -74,3 +74,4 @@ contactForm.addEventListener("submit", function(event) {
         `mailto:abineshv441@gmail.com?subject=${subject}&body=${body}`;
 
 });
+
